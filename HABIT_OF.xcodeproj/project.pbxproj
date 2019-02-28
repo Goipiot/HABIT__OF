@@ -10,6 +10,26 @@
 		3821C5D222279E7A00977869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C5D122279E7A00977869 /* AppDelegate.swift */; };
 		3821C5D922279E7B00977869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3821C5D822279E7B00977869 /* Assets.xcassets */; };
 		3821C5DC22279E7B00977869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3821C5DA22279E7B00977869 /* LaunchScreen.storyboard */; };
+		3821C5F72227A90D00977869 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C5F62227A90D00977869 /* Router.swift */; };
+		3821C5FA2227ABEC00977869 /* LoginMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3821C5F92227ABEC00977869 /* LoginMainView.xib */; };
+		3821C5FE2227AED400977869 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C5FD2227AED400977869 /* LoginMainViewController.swift */; };
+		3821C6002227B00E00977869 /* LoginMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C5FF2227B00E00977869 /* LoginMainView.swift */; };
+		3821C6062227B65200977869 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6052227B65200977869 /* LoginRouter.swift */; };
+		3821C6082227B7D800977869 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6072227B7D800977869 /* UserLoginViewController.swift */; };
+		3821C60B2227C5B600977869 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C60A2227C5B600977869 /* Color+Extension.swift */; };
+		3821C60E2227C9DB00977869 /* UserLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C60D2227C9DB00977869 /* UserLoginView.swift */; };
+		3821C6102227C9F200977869 /* UserLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3821C60F2227C9F200977869 /* UserLoginView.xib */; };
+		3821C6132227CE0C00977869 /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6122227CE0C00977869 /* TextfieldView.swift */; };
+		3821C6152227CF7500977869 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6142227CF7500977869 /* Validator.swift */; };
+		3821C61C2227D6A900977869 /* ProximaNova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3821C6172227D6A900977869 /* ProximaNova.ttf */; };
+		3821C61D2227D6A900977869 /* ProximaNovaRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3821C6182227D6A900977869 /* ProximaNovaRegular.ttf */; };
+		3821C61E2227D6A900977869 /* ProximaNovaLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3821C6192227D6A900977869 /* ProximaNovaLight.ttf */; };
+		3821C61F2227D6A900977869 /* ProximaNovaSemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3821C61A2227D6A900977869 /* ProximaNovaSemibold.ttf */; };
+		3821C6202227D6A900977869 /* MarkSimonson-ProximaNova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3821C61B2227D6A900977869 /* MarkSimonson-ProximaNova.ttf */; };
+		3821C6232227DCA800977869 /* UserSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6222227DCA800977869 /* UserSignupViewController.swift */; };
+		3821C6252227DCCE00977869 /* UserSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3821C6242227DCCE00977869 /* UserSignupView.swift */; };
+		3821C6272227DCDD00977869 /* UserSignupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3821C6262227DCDD00977869 /* UserSignupView.xib */; };
+		F1091B6038022A7A0DCB379D /* Pods_HABIT_OF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F5DA97AC36DD79E1DCB1798 /* Pods_HABIT_OF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +38,28 @@
 		3821C5D822279E7B00977869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3821C5DB22279E7B00977869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3821C5DD22279E7B00977869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3821C5F62227A90D00977869 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3821C5F92227ABEC00977869 /* LoginMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginMainView.xib; sourceTree = "<group>"; };
+		3821C5FD2227AED400977869 /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		3821C5FF2227B00E00977869 /* LoginMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainView.swift; sourceTree = "<group>"; };
+		3821C6052227B65200977869 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3821C6072227B7D800977869 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		3821C60A2227C5B600977869 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		3821C60D2227C9DB00977869 /* UserLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginView.swift; sourceTree = "<group>"; };
+		3821C60F2227C9F200977869 /* UserLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserLoginView.xib; sourceTree = "<group>"; };
+		3821C6122227CE0C00977869 /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
+		3821C6142227CF7500977869 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		3821C6172227D6A900977869 /* ProximaNova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNova.ttf; sourceTree = "<group>"; };
+		3821C6182227D6A900977869 /* ProximaNovaRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaRegular.ttf; sourceTree = "<group>"; };
+		3821C6192227D6A900977869 /* ProximaNovaLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaLight.ttf; sourceTree = "<group>"; };
+		3821C61A2227D6A900977869 /* ProximaNovaSemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaSemibold.ttf; sourceTree = "<group>"; };
+		3821C61B2227D6A900977869 /* MarkSimonson-ProximaNova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkSimonson-ProximaNova.ttf"; sourceTree = "<group>"; };
+		3821C6222227DCA800977869 /* UserSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewController.swift; sourceTree = "<group>"; };
+		3821C6242227DCCE00977869 /* UserSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupView.swift; sourceTree = "<group>"; };
+		3821C6262227DCDD00977869 /* UserSignupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserSignupView.xib; sourceTree = "<group>"; };
+		6F5DA97AC36DD79E1DCB1798 /* Pods_HABIT_OF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HABIT_OF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE550BBEC12E243DBC929E7E /* Pods-HABIT_OF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HABIT_OF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HABIT_OF/Pods-HABIT_OF.debug.xcconfig"; sourceTree = "<group>"; };
+		E472069783F18870E23C7C43 /* Pods-HABIT_OF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HABIT_OF.release.xcconfig"; path = "Pods/Target Support Files/Pods-HABIT_OF/Pods-HABIT_OF.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1091B6038022A7A0DCB379D /* Pods_HABIT_OF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +79,8 @@
 			children = (
 				3821C5D022279E7A00977869 /* HABIT_OF */,
 				3821C5CF22279E7A00977869 /* Products */,
+				C707D401C3594A817379E90C /* Pods */,
+				62B9FC38DC3FA69A975CF080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +105,9 @@
 		3821C5E322279F8D00977869 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3821C5E72227A04300977869 /* Business Logic */,
-				3821C5E62227A02700977869 /* Common */,
-				3821C5E92227A06900977869 /* Model */,
-				3821C5E82227A05E00977869 /* Presentation */,
+				3821C5ED2227A6A000977869 /* Presentation  */,
+				3821C5EC2227A69A00977869 /* Common */,
+				3821C5EB2227A68E00977869 /* Business Logic */,
 				3821C5D122279E7A00977869 /* AppDelegate.swift */,
 			);
 			path = Classes;
@@ -72,6 +116,7 @@
 		3821C5E422279F9800977869 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3821C6162227D68400977869 /* fonts */,
 				3821C5D822279E7B00977869 /* Assets.xcassets */,
 				3821C5DA22279E7B00977869 /* LaunchScreen.storyboard */,
 			);
@@ -86,32 +131,172 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3821C5E62227A02700977869 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		3821C5E72227A04300977869 /* Business Logic */ = {
+		3821C5EB2227A68E00977869 /* Business Logic */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "Business Logic";
 			sourceTree = "<group>";
 		};
-		3821C5E82227A05E00977869 /* Presentation */ = {
+		3821C5EC2227A69A00977869 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presentation;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		3821C5E92227A06900977869 /* Model */ = {
+		3821C5ED2227A6A000977869 /* Presentation  */ = {
+			isa = PBXGroup;
+			children = (
+				3821C5F42227A8A100977869 /* Common */,
+				3821C5EE2227A6C800977869 /* User Login  */,
+			);
+			path = "Presentation ";
+			sourceTree = "<group>";
+		};
+		3821C5EE2227A6C800977869 /* User Login  */ = {
+			isa = PBXGroup;
+			children = (
+				3821C5F32227A82C00977869 /* Router */,
+				3821C5F22227A7AA00977869 /* Helper */,
+				3821C5F12227A71500977869 /* View Controller */,
+				3821C5F02227A70800977869 /* View Model */,
+				3821C5EF2227A6F700977869 /* View */,
+			);
+			path = "User Login ";
+			sourceTree = "<group>";
+		};
+		3821C5EF2227A6F700977869 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6212227DC5800977869 /* User Signup */,
+				3821C60C2227C99100977869 /* User Login */,
+				3821C5F82227ABBB00977869 /* Login Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3821C5F02227A70800977869 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		3821C5F12227A71500977869 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3821C5FD2227AED400977869 /* LoginMainViewController.swift */,
+				3821C6072227B7D800977869 /* UserLoginViewController.swift */,
+				3821C6222227DCA800977869 /* UserSignupViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		3821C5F22227A7AA00977869 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6142227CF7500977869 /* Validator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3821C5F32227A82C00977869 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6052227B65200977869 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3821C5F42227A8A100977869 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6112227CDE700977869 /* Custom View */,
+				3821C6092227C56600977869 /* Color */,
+				3821C5F52227A8A800977869 /* Router */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3821C5F52227A8A800977869 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3821C5F62227A90D00977869 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3821C5F82227ABBB00977869 /* Login Main */ = {
+			isa = PBXGroup;
+			children = (
+				3821C5F92227ABEC00977869 /* LoginMainView.xib */,
+				3821C5FF2227B00E00977869 /* LoginMainView.swift */,
+			);
+			path = "Login Main";
+			sourceTree = "<group>";
+		};
+		3821C6092227C56600977869 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3821C60A2227C5B600977869 /* Color+Extension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		3821C60C2227C99100977869 /* User Login */ = {
+			isa = PBXGroup;
+			children = (
+				3821C60D2227C9DB00977869 /* UserLoginView.swift */,
+				3821C60F2227C9F200977869 /* UserLoginView.xib */,
+			);
+			path = "User Login";
+			sourceTree = "<group>";
+		};
+		3821C6112227CDE700977869 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6122227CE0C00977869 /* TextfieldView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		3821C6162227D68400977869 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3821C61B2227D6A900977869 /* MarkSimonson-ProximaNova.ttf */,
+				3821C6172227D6A900977869 /* ProximaNova.ttf */,
+				3821C6192227D6A900977869 /* ProximaNovaLight.ttf */,
+				3821C6182227D6A900977869 /* ProximaNovaRegular.ttf */,
+				3821C61A2227D6A900977869 /* ProximaNovaSemibold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		3821C6212227DC5800977869 /* User Signup */ = {
+			isa = PBXGroup;
+			children = (
+				3821C6242227DCCE00977869 /* UserSignupView.swift */,
+				3821C6262227DCDD00977869 /* UserSignupView.xib */,
+			);
+			path = "User Signup";
+			sourceTree = "<group>";
+		};
+		62B9FC38DC3FA69A975CF080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F5DA97AC36DD79E1DCB1798 /* Pods_HABIT_OF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C707D401C3594A817379E90C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE550BBEC12E243DBC929E7E /* Pods-HABIT_OF.debug.xcconfig */,
+				E472069783F18870E23C7C43 /* Pods-HABIT_OF.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,10 +306,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3821C5E022279E7B00977869 /* Build configuration list for PBXNativeTarget "HABIT_OF" */;
 			buildPhases = (
+				3AE6F16D6416FCD32DD0106E /* [CP] Check Pods Manifest.lock */,
 				3821C5EA2227A29200977869 /* ShellScript */,
 				3821C5CA22279E7A00977869 /* Sources */,
 				3821C5CB22279E7A00977869 /* Frameworks */,
 				3821C5CC22279E7A00977869 /* Resources */,
+				C8DBAA00C17CB17D62BA01C2 /* [CP] Embed Pods Frameworks */,
+				05CC2CE4601C0691DC435978 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,13 +362,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				3821C5DC22279E7B00977869 /* LaunchScreen.storyboard in Resources */,
+				3821C61C2227D6A900977869 /* ProximaNova.ttf in Resources */,
+				3821C6102227C9F200977869 /* UserLoginView.xib in Resources */,
+				3821C6272227DCDD00977869 /* UserSignupView.xib in Resources */,
+				3821C5FA2227ABEC00977869 /* LoginMainView.xib in Resources */,
+				3821C61D2227D6A900977869 /* ProximaNovaRegular.ttf in Resources */,
 				3821C5D922279E7B00977869 /* Assets.xcassets in Resources */,
+				3821C6202227D6A900977869 /* MarkSimonson-ProximaNova.ttf in Resources */,
+				3821C61F2227D6A900977869 /* ProximaNovaSemibold.ttf in Resources */,
+				3821C61E2227D6A900977869 /* ProximaNovaLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05CC2CE4601C0691DC435978 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HABIT_OF/Pods-HABIT_OF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3821C5EA2227A29200977869 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +413,47 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		3AE6F16D6416FCD32DD0106E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HABIT_OF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8DBAA00C17CB17D62BA01C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HABIT_OF/Pods-HABIT_OF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -205,7 +461,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3821C6082227B7D800977869 /* UserLoginViewController.swift in Sources */,
+				3821C60E2227C9DB00977869 /* UserLoginView.swift in Sources */,
+				3821C6152227CF7500977869 /* Validator.swift in Sources */,
+				3821C6252227DCCE00977869 /* UserSignupView.swift in Sources */,
+				3821C60B2227C5B600977869 /* Color+Extension.swift in Sources */,
+				3821C5F72227A90D00977869 /* Router.swift in Sources */,
+				3821C6132227CE0C00977869 /* TextfieldView.swift in Sources */,
+				3821C5FE2227AED400977869 /* LoginMainViewController.swift in Sources */,
+				3821C6062227B65200977869 /* LoginRouter.swift in Sources */,
 				3821C5D222279E7A00977869 /* AppDelegate.swift in Sources */,
+				3821C6232227DCA800977869 /* UserSignupViewController.swift in Sources */,
+				3821C6002227B00E00977869 /* LoginMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,11 +609,13 @@
 		};
 		3821C5E122279E7B00977869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE550BBEC12E243DBC929E7E /* Pods-HABIT_OF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WJLTVKUMT;
-				INFOPLIST_FILE = HABIT_OF/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HABIT_OF/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,17 +623,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "--.HABIT-OF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3821C5E222279E7B00977869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E472069783F18870E23C7C43 /* Pods-HABIT_OF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4WJLTVKUMT;
-				INFOPLIST_FILE = HABIT_OF/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HABIT_OF/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "--.HABIT-OF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
