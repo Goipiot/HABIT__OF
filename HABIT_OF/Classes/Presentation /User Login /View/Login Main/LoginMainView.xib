@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNovaLight.ttf">
+            <string>ProximaNova-Light</string>
+        </array>
+        <array key="ProximaNovaRegular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNovaSemibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginMainViewController" customModule="HABIT_OF" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uZv-Ln-HnL" customClass="LoginMainView" customModule="HABIT_OF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRegistration" translatesAutoresizingMaskIntoConstraints="NO" id="yZe-5b-QAy">
+                    <rect key="frame" x="47.666666666666657" y="174" width="280" height="72"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The habit of everyday steps to the better you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpW-q8-6W8">
+                    <rect key="frame" x="66.666666666666686" y="258" width="242" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="242" id="Kwj-cx-h2E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="HNl-BW-qrg">
+                    <rect key="frame" x="15" y="434" width="345" height="225"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uB-ac-98m">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="65"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.3411764706" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="mfj-Y6-NcF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                            <state key="normal" title="Continue with Facebook">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bED-YW-Xbs">
+                            <rect key="frame" x="0.0" y="80" width="345" height="65"/>
+                            <color key="backgroundColor" name="customGrey"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="qIi-PL-8do"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                            <state key="normal" title="Continue with Email">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="emailRegistrationButtonPressed:" destination="-1" eventType="touchUpInside" id="hAs-aY-Bhf"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emn-Vd-okS">
+                            <rect key="frame" x="0.0" y="160" width="345" height="65"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGP-ob-Ajm">
+                                    <rect key="frame" x="88.666666666666686" y="17.666666666666629" width="168" height="30"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-rZ-IoZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                            <state key="normal" title="Have an account? ">
+                                                <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="AWj-ge-R81"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-FQ-iZW">
+                                            <rect key="frame" x="126" y="0.0" width="42" height="30"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                            <state key="normal" title="Log In">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="mwk-zS-u9p"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="M74-NN-6ie"/>
+                                <constraint firstItem="aGP-ob-Ajm" firstAttribute="centerY" secondItem="emn-Vd-okS" secondAttribute="centerY" id="iCa-DM-SHF"/>
+                                <constraint firstItem="aGP-ob-Ajm" firstAttribute="centerX" secondItem="emn-Vd-okS" secondAttribute="centerX" id="jwX-zf-ABb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="By signing up, you agree to our Terms, Data Policy and Cookies Policy." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pq-hq-0sG">
+                    <rect key="frame" x="65" y="730.66666666666663" width="245" height="47.333333333333371"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="zcb-EL-hMa"/>
+                    </constraints>
+                    <color key="textColor" red="0.62180092170000001" green="0.63889647770000002" blue="0.65915119359999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yZe-5b-QAy" firstAttribute="centerX" secondItem="dYI-Ns-aP7" secondAttribute="centerX" id="6mB-nZ-qdC"/>
+                <constraint firstItem="yZe-5b-QAy" firstAttribute="top" secondItem="dYI-Ns-aP7" secondAttribute="top" constant="130" id="Cnq-Yu-OeT"/>
+                <constraint firstItem="HNl-BW-qrg" firstAttribute="centerX" secondItem="dYI-Ns-aP7" secondAttribute="centerX" id="Ex0-SH-dke"/>
+                <constraint firstItem="8Pq-hq-0sG" firstAttribute="centerX" secondItem="dYI-Ns-aP7" secondAttribute="centerX" id="R4R-mb-LIi"/>
+                <constraint firstItem="FpW-q8-6W8" firstAttribute="top" secondItem="yZe-5b-QAy" secondAttribute="bottom" constant="12" id="cdT-df-fyy"/>
+                <constraint firstItem="dYI-Ns-aP7" firstAttribute="bottom" secondItem="8Pq-hq-0sG" secondAttribute="bottom" id="hHG-hS-bts"/>
+                <constraint firstItem="FpW-q8-6W8" firstAttribute="centerX" secondItem="dYI-Ns-aP7" secondAttribute="centerX" id="kcy-5V-wHr"/>
+                <constraint firstItem="HNl-BW-qrg" firstAttribute="top" secondItem="FpW-q8-6W8" secondAttribute="bottom" constant="127" id="r4l-OW-Ca4"/>
+                <constraint firstItem="HNl-BW-qrg" firstAttribute="leading" secondItem="dYI-Ns-aP7" secondAttribute="leading" constant="15" id="zoY-CF-wgT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dYI-Ns-aP7"/>
+            <connections>
+                <outlet property="emailButton" destination="bED-YW-Xbs" id="ekh-bb-y1q"/>
+                <outlet property="facebookButton" destination="8uB-ac-98m" id="eNS-Jl-Sol"/>
+                <outlet property="haveAnAccountView" destination="emn-Vd-okS" id="0zv-TT-Vvw"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoRegistration" width="280" height="72"/>
+        <namedColor name="customGrey">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

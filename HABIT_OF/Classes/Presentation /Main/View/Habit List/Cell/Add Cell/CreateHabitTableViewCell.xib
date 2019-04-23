@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNovaSemibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CreateHabitCell" id="0Kc-Dn-1ME" customClass="CreateHabitTableViewCell" customModule="HABIT_OF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Kc-Dn-1ME" id="gd0-Ho-NLP">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBp-ZY-MVD">
+                        <rect key="frame" x="266" y="11.5" width="94" height="21"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="ar4-cE-272"/>
+                            <constraint firstAttribute="height" constant="21" id="bQa-uY-ede"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                        <state key="normal" title="+ New habit">
+                            <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addNewHabitButtonPressed:" destination="0Kc-Dn-1ME" eventType="touchUpInside" id="O0E-7P-C75"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tBp-ZY-MVD" secondAttribute="trailing" constant="15" id="feI-cl-1TI"/>
+                    <constraint firstItem="tBp-ZY-MVD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gd0-Ho-NLP" secondAttribute="leading" constant="20" symbolic="YES" id="jln-zL-7Jp"/>
+                    <constraint firstItem="tBp-ZY-MVD" firstAttribute="centerY" secondItem="gd0-Ho-NLP" secondAttribute="centerY" id="trF-La-1cJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newHabitButton" destination="tBp-ZY-MVD" id="yZb-qJ-X1r"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

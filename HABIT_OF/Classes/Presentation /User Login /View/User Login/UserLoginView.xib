@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkSimonson-ProximaNova.ttf">
+            <string>ProximaNova-RegularCondensed</string>
+        </array>
+        <array key="ProximaNovaLight.ttf">
+            <string>ProximaNova-Light</string>
+        </array>
+        <array key="ProximaNovaRegular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNovaSemibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserLoginViewController" customModule="HABIT_OF" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BTe-e0-pnV" customClass="UserLoginView" customModule="HABIT_OF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRegistration" translatesAutoresizingMaskIntoConstraints="NO" id="eha-SK-OYS">
+                    <rect key="frame" x="47.666666666666657" y="174" width="280" height="72"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The habit of everyday steps to the better you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrh-Ga-qR0">
+                    <rect key="frame" x="66.666666666666686" y="258" width="242" height="51.333333333333314"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="242" id="IKH-2H-p7M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JQf-Ed-rVL">
+                    <rect key="frame" x="15" y="436.33333333333326" width="345" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zs-Dn-bln" userLabel="NameView" customClass="TextfieldView" customModule="HABIT_OF" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-aF-Xo1">
+                                    <rect key="frame" x="6" y="7" width="333" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                    <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7pO-hj-SpF">
+                                    <rect key="frame" x="5" y="29" width="335" height="36"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-RegularCondensed" family="Proxima Nova" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                            <integer key="value" value="40"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="BTe-e0-pnV" id="gEv-rI-02I"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" name="customGrey"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="345" id="0Kd-cp-Aov"/>
+                                <constraint firstAttribute="bottom" secondItem="7pO-hj-SpF" secondAttribute="bottom" id="2fV-uI-U3T"/>
+                                <constraint firstItem="7pO-hj-SpF" firstAttribute="top" secondItem="Crp-aF-Xo1" secondAttribute="bottom" constant="10" id="8BF-nV-4ak"/>
+                                <constraint firstItem="Crp-aF-Xo1" firstAttribute="leading" secondItem="7zs-Dn-bln" secondAttribute="leading" constant="6" id="Bar-YH-ckh"/>
+                                <constraint firstItem="Crp-aF-Xo1" firstAttribute="centerX" secondItem="7zs-Dn-bln" secondAttribute="centerX" id="LPP-pp-ed7"/>
+                                <constraint firstAttribute="height" constant="65" id="MPy-5e-qZp"/>
+                                <constraint firstItem="Crp-aF-Xo1" firstAttribute="top" secondItem="7zs-Dn-bln" secondAttribute="top" constant="7" id="lvF-eK-I4b"/>
+                                <constraint firstItem="7pO-hj-SpF" firstAttribute="centerX" secondItem="7zs-Dn-bln" secondAttribute="centerX" id="rYb-or-whD"/>
+                                <constraint firstItem="7pO-hj-SpF" firstAttribute="leading" secondItem="7zs-Dn-bln" secondAttribute="leading" constant="5" id="sGL-YR-gl4"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-NL-edW" userLabel="NameView" customClass="TextfieldView" customModule="HABIT_OF" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="80.000000000000057" width="345" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qj-B6-aUv">
+                                    <rect key="frame" x="6" y="7" width="333" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                    <color key="textColor" red="0.65490196079999996" green="0.65490196079999996" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7B-ic-qly">
+                                    <rect key="frame" x="5" y="29" width="335" height="36"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-RegularCondensed" family="Proxima Nova" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                            <integer key="value" value="40"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outlet property="delegate" destination="BTe-e0-pnV" id="jKv-jV-dGr"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" name="customGrey"/>
+                            <constraints>
+                                <constraint firstItem="m7B-ic-qly" firstAttribute="centerX" secondItem="EFq-NL-edW" secondAttribute="centerX" id="Dmh-8c-Hab"/>
+                                <constraint firstItem="m7B-ic-qly" firstAttribute="leading" secondItem="EFq-NL-edW" secondAttribute="leading" constant="5" id="EiX-qb-Nt0"/>
+                                <constraint firstAttribute="bottom" secondItem="m7B-ic-qly" secondAttribute="bottom" id="UOI-hr-uFs"/>
+                                <constraint firstItem="1qj-B6-aUv" firstAttribute="centerX" secondItem="EFq-NL-edW" secondAttribute="centerX" id="pga-Yl-XR5"/>
+                                <constraint firstItem="1qj-B6-aUv" firstAttribute="top" secondItem="EFq-NL-edW" secondAttribute="top" constant="7" id="tk2-yA-6eQ"/>
+                                <constraint firstItem="1qj-B6-aUv" firstAttribute="leading" secondItem="EFq-NL-edW" secondAttribute="leading" constant="6" id="vE2-Ne-gLN"/>
+                                <constraint firstAttribute="height" constant="65" id="vtv-lt-wha"/>
+                                <constraint firstItem="m7B-ic-qly" firstAttribute="top" secondItem="1qj-B6-aUv" secondAttribute="bottom" constant="10" id="wHp-Ct-axf"/>
+                                <constraint firstAttribute="width" constant="345" id="xQ1-Om-KzE"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrP-P4-dyy">
+                            <rect key="frame" x="0.0" y="160.00000000000006" width="345" height="40"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect email" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmm-V8-t1c">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="40"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                    <color key="textColor" red="1" green="0.098097358110000005" blue="0.13198869960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EN-x7-4Ch">
+                                    <rect key="frame" x="0.0" y="0.0" width="345" height="40"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-RegularCondensed" family="Proxima Nova" pointSize="15"/>
+                                    <color key="tintColor" red="0.37254901959999998" green="0.56862745100000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" image="continueButton"/>
+                                    <connections>
+                                        <action selector="loginButtonPressed:" destination="BTe-e0-pnV" eventType="touchUpInside" id="2Gt-rQ-ZY7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="By signing up, you agree to our Terms, Data Policy and Cookies Policy." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB2-Ca-5Sz">
+                    <rect key="frame" x="65" y="730" width="245" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="IVe-74-Tqe"/>
+                    </constraints>
+                    <color key="textColor" red="0.62180092170000001" green="0.63889647770000002" blue="0.65915119359999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wrh-Ga-qR0" firstAttribute="top" secondItem="eha-SK-OYS" secondAttribute="bottom" constant="12" id="8C8-dV-Nf1"/>
+                <constraint firstItem="CB2-Ca-5Sz" firstAttribute="centerX" secondItem="9Yv-xj-00t" secondAttribute="centerX" id="Bjq-qz-b8e"/>
+                <constraint firstItem="JQf-Ed-rVL" firstAttribute="leading" secondItem="9Yv-xj-00t" secondAttribute="leading" constant="15" id="BoL-T7-Tyr"/>
+                <constraint firstItem="eha-SK-OYS" firstAttribute="top" secondItem="9Yv-xj-00t" secondAttribute="top" constant="130" id="EnL-53-UZo"/>
+                <constraint firstItem="9Yv-xj-00t" firstAttribute="bottom" secondItem="CB2-Ca-5Sz" secondAttribute="bottom" id="Go2-lV-izV"/>
+                <constraint firstItem="JQf-Ed-rVL" firstAttribute="centerX" secondItem="9Yv-xj-00t" secondAttribute="centerX" id="H7U-W9-27L"/>
+                <constraint firstItem="JQf-Ed-rVL" firstAttribute="top" secondItem="wrh-Ga-qR0" secondAttribute="bottom" constant="127" id="Wpc-u9-RDn"/>
+                <constraint firstItem="wrh-Ga-qR0" firstAttribute="centerX" secondItem="9Yv-xj-00t" secondAttribute="centerX" id="jio-0f-AmF"/>
+                <constraint firstItem="eha-SK-OYS" firstAttribute="centerX" secondItem="9Yv-xj-00t" secondAttribute="centerX" id="uao-Ay-XU0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Yv-xj-00t"/>
+            <connections>
+                <outlet property="emailTextField" destination="7pO-hj-SpF" id="DKQ-Ef-ngK"/>
+                <outlet property="warningLabel" destination="Fmm-V8-t1c" id="V0E-Wp-7cy"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="continueButton" width="145" height="40"/>
+        <image name="logoRegistration" width="280" height="72"/>
+        <namedColor name="customGrey">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

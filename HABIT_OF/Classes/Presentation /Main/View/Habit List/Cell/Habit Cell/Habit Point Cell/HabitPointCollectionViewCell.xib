@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="habitPointCollectionViewCell" id="gTV-IL-0wX" customClass="HabitPointCollectionViewCell" customModule="HABIT_OF" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cef-b6-iVB" userLabel="ButtonView">
+                        <rect key="frame" x="13.5" y="13.5" width="23" height="23"/>
+                        <color key="backgroundColor" name="customGrey"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="9db-MO-neI"/>
+                            <constraint firstAttribute="width" constant="23" id="cEX-r8-d4d"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAE-zy-baY">
+                        <rect key="frame" x="21.5" y="21.5" width="7" height="7"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="QCR-Cs-Uaf"/>
+                            <constraint firstAttribute="height" constant="7" id="wM8-TA-wPe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HAE-zy-baY" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="BFA-7n-eSO"/>
+                <constraint firstItem="HAE-zy-baY" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="E6r-hX-uKf"/>
+                <constraint firstItem="cef-b6-iVB" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="UiE-kk-Mkz"/>
+                <constraint firstItem="cef-b6-iVB" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Yyi-lO-RCB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="habitPointView" destination="HAE-zy-baY" id="Iez-bp-tcU"/>
+                <outlet property="selectionEffectView" destination="cef-b6-iVB" id="XgU-Nd-9QX"/>
+            </connections>
+            <point key="canvasLocation" x="89.599999999999994" y="82.758620689655174"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="customGrey">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
