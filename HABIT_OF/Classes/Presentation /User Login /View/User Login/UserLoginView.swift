@@ -11,33 +11,35 @@ import UIKit
 class UserLoginView: UIView {
 
     // MARK: - IBOutlet
+    
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     
     // MARK: - UIView
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         setup()
     }
     
-    // MARK: - UI Setup
-    func setup() {
-        
-        
-    }
-    
     // MARK: - IBAction
+    
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if Validator.isValidEmail(testStr: emailTextField.text ?? "") {
-            
+            (UIApplication.shared.delegate as? AppDelegate)!.changeStoryToMain()
         } else {
             warningLabel.isHidden = false
         }
     }
     
+    // MARK: - UI Setup
+    
+    private func setup() {
+    }
 }
 
 // MARK: - UITextField Delegate
+
 extension UserLoginView: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -66,5 +68,4 @@ extension UserLoginView: UITextFieldDelegate {
         self.frame = self.frame.offsetBy(dx: 0, dy: movement)
         UIView.commitAnimations()
     }
-
 }

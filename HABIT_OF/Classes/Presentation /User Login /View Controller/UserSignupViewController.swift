@@ -11,16 +11,21 @@ import UIKit
 class UserSignupViewController: UIViewController {
 
     // MARK: - Private Properties
+    
     private lazy var router = LoginRouter(presenter: self)
+    private var contentView = UserSignupView()
     
     // MARK: - UIViewController
+    
     override func loadView() {
         super.loadView()
-        self.view = Bundle.main.loadNibNamed("UserSignupView", owner: self, options: nil)?.first as! UserSignupView
+        guard let view = Bundle.main.loadNibNamed(
+            "UserSignupView",
+            owner: self,
+            options: nil)?.first as? UserSignupView else { return }
+        
+        self.contentView = view
+        self.view = contentView
     }
     
-    func view() -> UserSignupView {
-        return view as! UserSignupView
-    }
-
 }

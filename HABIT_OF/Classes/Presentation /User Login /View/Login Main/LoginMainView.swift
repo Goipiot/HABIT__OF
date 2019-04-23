@@ -11,24 +11,25 @@ import UIKit
 class LoginMainView: UIView {
     
     // MARK: - IBOutlet
+    
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
     @IBOutlet weak var haveAnAccountView: UIView!
     
     // MARK: - UIView
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         setup()
     }
     
-    // MARK: - UI Setup
-    func setup() {
+    // MARK: - Private methods
+    
+    private func setup() {
         facebookButton.layer.cornerRadius = 8
         emailButton.layer.cornerRadius = 8
         haveAnAccountView.layer.cornerRadius = 8
-        haveAnAccountView.layer.borderWidth = 0.1
+        haveAnAccountView.layer.borderWidth = 1
         haveAnAccountView.layer.borderColor = UIColor.customGrey.cgColor
-        
     }
-
 }

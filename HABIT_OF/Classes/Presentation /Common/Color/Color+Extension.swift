@@ -11,5 +11,6 @@ import UIKit
 extension UIColor {
     static var customGrey: UIColor { return UIColor(named: #function)! }
     static var customBlue: UIColor { return UIColor(named: #function)! }
-    
+    static var customGreen: UIColor { return UIColor(named: #function)! }
+    static var customPink: UIColor { return UIColor(named: #function)! }
 }

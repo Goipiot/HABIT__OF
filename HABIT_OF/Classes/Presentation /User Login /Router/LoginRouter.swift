@@ -12,8 +12,6 @@ class LoginRouter: Router {
     
     var presenter: UIViewController?
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     init(presenter: UIViewController) {
         self.presenter = presenter
     }

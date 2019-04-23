@@ -38,11 +38,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().backIndicatorImage = UIImage()
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage()
         UIBarButtonItem.appearance().setTitleTextAttributes(
-            ([NSAttributedString.Key.font: UIFont(name: "ProximaNova-Regular", size: 15)!,
+            ([NSAttributedString.Key.font: UIFont(name: "ProximaNova-Semibold", size: 15)!,
               NSAttributedString.Key.foregroundColor: UIColor.customBlue]), for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes(
-            ([NSAttributedString.Key.font: UIFont(name: "ProximaNova-Regular", size: 15)!,
+            ([NSAttributedString.Key.font: UIFont(name: "ProximaNova-Semibold", size: 15)!,
               NSAttributedString.Key.foregroundColor: UIColor.customBlue]), for: .highlighted)
+        UIBarButtonItem.appearance().setTitleTextAttributes(
+            ([NSAttributedString.Key.font: UIFont(name: "ProximaNova-Semibold", size: 15)!,
+              NSAttributedString.Key.foregroundColor: UIColor.customBlue]), for: .disabled)
     }
 
+    func changeStoryToMain() {
+        let mainNavigationController = UINavigationController()
+        mainNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        mainNavigationController.navigationBar.shadowImage = UIImage()
+        mainNavigationController.navigationBar.isTranslucent = true
+        mainNavigationController.navigationBar.prefersLargeTitles = true
+        mainNavigationController.navigationBar.largeTitleTextAttributes = ([NSAttributedString.Key.font: UIFont(
+            name: "ProximaNova-Black",
+            size: 35)!])
+        mainNavigationController.navigationBar.titleTextAttributes = ([NSAttributedString.Key.font: UIFont(
+            name: "ProximaNova-Extrabld",
+            size: 15)!])
+        mainNavigationController.toolbar.isHidden = true
+        mainNavigationController.pushViewController(HabitMainViewController(), animated: false)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = mainNavigationController
+        self.window?.makeKeyAndVisible()
+    }
 }
